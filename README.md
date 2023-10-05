@@ -57,7 +57,7 @@ Frontend kräver att backend redan kör för API-anropen ska fungera
 
 ### Förbättringsområden:
 
-I mån av att få iväg detta inom en rimlig tid så har jag noterar jag här istället några områden man hade kunnat förbättra:
+I mån av att få iväg detta inom en rimlig tid så har jag noterat några områden man hade kunnat förbättra:
 
 - Refaktorisera VehicleList och VehicleDetailsDrawer då de blev lite packade
 - Virtualization i DataGriden, förbättrad prestanda vid stora mängder vehicle entries
