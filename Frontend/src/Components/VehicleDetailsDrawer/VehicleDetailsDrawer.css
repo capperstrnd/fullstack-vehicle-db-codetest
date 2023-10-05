@@ -1,0 +1,30 @@
+.tagInput {
+    display: flex;
+    column-gap: 8px;
+    width: 100%; 
+    margin-bottom: 8px;
+}
+
+.fillWidth {
+    width: 100%;
+}
+
+.tags {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction:row;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+
+.drawerFooter {
+    display: flex !important;
+    justify-content: stretch !important;
+    width: calc(100% - 48px); /* take out padding */
+}
+
+.drawerFooter > * {
+    flex-grow: 1;
+}

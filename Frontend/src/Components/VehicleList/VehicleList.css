@@ -1,0 +1,17 @@
+.BlockSelect {
+    z-index: 100;
+    pointer-events:none;
+    overflow:visible;
+    background:none !important;
+}
+
+.Clickable {
+    z-index: 300;
+    pointer-events:fill;
+}
+
+.content {
+    max-height: calc(100svh - 7rem);
+    margin-top: calc(7rem);
+    overflow-y: scroll;
+}

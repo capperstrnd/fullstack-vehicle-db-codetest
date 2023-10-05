@@ -15,6 +15,15 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddCors(options => {
+            options.AddPolicy("AllowOrigin", builder =>
+            {
+                builder.WithOrigins("http://localhost:3000")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+            });
+        });
+
         // Configure services here
         services.AddControllers();
 
@@ -43,6 +52,8 @@ public class Startup
         }
 
         app.UseAuthorization();
+
+        app.UseCors("AllowOrigin"); 
 
         app.UseHttpsRedirection();
         app.UseRouting();
